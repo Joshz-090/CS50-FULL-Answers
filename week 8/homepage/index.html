@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional website offering various services with a modern design">
+    <title>Home - Premium Web Solutions</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- Preload important resources -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" as="style">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-rocket mr-2"></i>Premium Web Solutions
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Services
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <a class="dropdown-item" href="services.html#web">Web Development</a>
+                            <a class="dropdown-item" href="services.html#design">UI/UX Design</a>
+                            <a class="dropdown-item" href="services.html#seo">SEO Optimization</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero jumbotron jumbotron-fluid text-center text-white mb-0">
+        <div class="container">
+            <h1 class="display-4">Transform Your Digital Presence</h1>
+            <p class="lead">Professional web solutions tailored to your business needs</p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary btn-lg mr-3" onclick="displayAlert()">
+                    <i class="fas fa-play mr-2"></i>Watch Demo
+                </button>
+                <a href="contact.html" class="btn btn-outline-light btn-lg">
+                    <i class="fas fa-phone-alt mr-2"></i>Contact Us
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <section class="features row text-center">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <i class="fas fa-laptop-code fa-3x mb-3 text-primary"></i>
+                        <h3>Web Development</h3>
+                        <p>Custom websites built with modern technologies for optimal performance.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <i class="fas fa-mobile-alt fa-3x mb-3 text-primary"></i>
+                        <h3>Responsive Design</h3>
+                        <p>Flawless experience across all devices and screen sizes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <i class="fas fa-chart-line fa-3x mb-3 text-primary"></i>
+                        <h3>SEO Optimization</h3>
+                        <p>Boost your visibility and climb search engine rankings.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>About Us</h5>
+                    <p>Delivering exceptional digital solutions since 2010.</p>
+                </div>
+                <div class="col-md-6 text-md-right">
+                    <h5>Connect With Us</h5>
+                    <a href="#" class="text-white mr-3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white mr-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white mr-3"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p class="mb-0">&copy; 2023 Premium Web Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Enhanced JavaScript function
+        function displayAlert() {
+            const name = prompt("Welcome to our website! What's your name?");
+            if (name) {
+                alert(`Hello ${name}! Thanks for visiting Premium Web Solutions.`);
+            }
+        }
+    </script>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="scripts.js"></script>
+</body>
+</html>

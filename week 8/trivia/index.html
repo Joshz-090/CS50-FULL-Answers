@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+    </head>
+
+    <body>
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+
+                <!-- TODO: Add multiple choice question here -->
+
+                <h3>What is the approximate ratio of people to sheep in New Zealand?</h3>
+                <p id="status"></p>
+
+                <button id="incorrect">6 people per 1 sheep</button>
+                <button id="incorrect">3 people per 1 sheep</button>
+                <button id="incorrect">1 people per 1 sheep</button>
+                <button id="incorrect">1 people per 3 sheep</button>
+                <button id="correct">1 people per 6 sheep</button>
+
+                <script>
+                    let correct = document.querySelector('#correct');
+                    let incorrect = document.querySelectorAll('#incorrect');
+                    let status = document.querySelector('#status');
+
+                    correct.onclick = function() {
+                        correct.style.backgroundColor = 'green';
+                        status.innerHTML = "Correct!";
+                    };
+
+                    for (let i = 0; i < incorrect.length; i++) {
+                        incorrect[i].onclick = function() {
+                            incorrect[i].style.backgroundColor = 'red';
+                            status.innerHTML = "Incorrect!";
+                        };
+                    }
+                </script>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+
+                <!-- TODO: Add free response question here -->
+
+                <h3>In which country is it illegal to own only one guinea pig, as a lone guinea pig might get lonely?</h3>
+                <p id="status2"></p>
+
+                <form>
+                    <input type="text" id="value">
+                    <button>Check Answer</button>
+
+                    <script>
+                        document.addEventListener('submit', function() {
+                            let status2 = document.querySelector('#status2');
+                            let value = document.querySelector('#value');
+
+                            if (value.value == 'Switzerland' || value.value == 'switzerland' || value.value == 'SWITZERLAND') {
+                                value.style.backgroundColor = 'green';
+                                status2.innerHTML = 'Correct!';
+                            }
+                            else {
+                                value.style.backgroundColor = 'red';
+                                status2.innerHTML = 'Incorrect!';
+                            }
+                        });
+                    </script>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

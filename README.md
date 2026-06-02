@@ -2,7 +2,7 @@
 
 Welcome to **CS50-FULL-Answers** — a complete guide to help new students succeed in **Harvard’s CS50: Introduction to Computer Science** course. 🚀  
 
----
+---  
 
 ## 📘 About This Repository
 This repo includes **solutions, explanations, and tips** for every week of CS50 — from **Week 0** to the **Final Project**.  
